@@ -1,0 +1,8 @@
+<div class="row logs">
+    <div class="col-6 loginHeader" (click)="changeMenu('login')" id="login" [ngClass]="(selected=='login')?'selectedTab':'nonSelected'">
+        Login
+    </div>
+    <div class="col-6 loginHeader"  (click)="changeMenu('signup')" id="signup" [ngClass]="(selected=='signup')?'selectedTab':'nonSelected'"> 
+        Signup
+    </div>
+</div>
