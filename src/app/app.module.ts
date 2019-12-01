@@ -7,6 +7,11 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent} from './login/login.component';
 import {MatDialogModule} from '@angular/material/dialog';
+//forms Module
+import { FormsModule }   from '@angular/forms';
+import { SearchPipe } from './pipes/search.pipe';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,8 +22,7 @@ import {MatDialogModule} from '@angular/material/dialog';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatDialogModule
+    FormsModule
   ],
   entryComponents: [LoginComponent],
   providers: [],
