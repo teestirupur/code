@@ -5,11 +5,26 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './main-header.component.html',
   styleUrls: ['./main-header.component.css']
 })
+
+
 export class MainHeaderComponent implements OnInit {
 
+  
   constructor() { }
-
+  name = 'Angular';
+  productItems:any[]=[];
   ngOnInit() {
+    const showListItems=false;
+    this.productItems=[
+      'tv',
+      'fridge',
+      'washing machine',
+      'cooker',
+      'computer',
+      'bed',
+      "video game"
+  ]
   }
 
+  
 }

@@ -1,3 +1,19 @@
-<div class="main">
-        <h4>Teeskart</h4>
+<div class="container-fluid">
+        <h4>Tees of Tiruppur</h4>
+        <div class="md-form" style="float:left;text-align: center;margin-left: 30px;">
+                <i class="fa fa-search" [ngClass]="left? 'searchClass' : ''" aria-hidden="true"
+                 style="padding-right:10px" ></i>
+                <input [(ngModel)]="searchText" placeholder="Search what your heart says..!!"
+                (mouseleave)="left=false" (mouseover)="left=true" (click)="showListItems=true">
+        </div>
+        <div class="listItems" >
+                <ul type="none">
+                        <li *ngFor="let i of productItems | searchFilter:searchText">
+                        {{i}}
+                        </li>
+                    </ul> 
+        </div>
+       
+      
 </div>
+
